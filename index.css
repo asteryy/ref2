@@ -1,0 +1,230 @@
+
+/* 二� �됱긽 蹂�寃쎌� Ctrl + H �⑥텞�� �꾨Ⅸ �� 0078AA �됱긽�� �먰븯�� �ㅻⅨ �됱긽�쇰줈 紐⑤몢 諛붽씀湲� */
+@font-face {
+    src : url("../font/CompactaLightBT.ttf");
+    font-family: "title" }
+    @font-face {
+        src : url("../font/GmarketSansTTFLight.ttf");
+        font-family: "subtitle" }
+    @font-face {
+        src : url("../font/GmarketSansTTFMedium.ttf");
+        font-family: "maintitle" }
+/* index.html�곸뿭 CSS */
+main {}
+main .intro_bg {
+    width:100%; height:700px;
+    background-position: center; background-size: cover;  background-attachment: fixed;
+    background-image:url(../images/background.jpg);
+    background-color: black;
+}
+    main .intro_bg .intro {width:1200px; margin:0 auto; padding-top:77px}
+main .intro_bg .intro h1 {
+    padding-top:418px; font-size:2rem; line-height:1.2; letter-spacing:-0.02rem;
+    animation:moveY 1s 0.8s backwards, opacity 1s 0.8s backwards ;
+    font-family:"maintitle"; letter-spacing: -0.02rem; color:#fff;
+}
+main .intro_bg span {font-size:2rem; color:#f64562;    font-family:"maintitle"; letter-spacing: -0.02rem;}
+main section {}
+main section .project_web {
+    position:relative;
+    display: flex; flex-flow: row nowrap; justify-content: center; width:100%; height:100vh; margin:0 auto 100px;}
+main section .project_web > h1 {
+    position:absolute; left:0; top:0;
+    text-transform:uppercase; padding:20px 0; margin:20px 0; font-size:1.3rem; color:#f64562; font-weight: 700;}
+/* �꾨줈�앺듃 �대�吏� 諛곌꼍�대�吏� 遺�遺� */
+main section .project_web .web:hover {max-width:550px;}
+main section .project_web .web1:hover {background-color: #e26408;}
+main section .project_web .web2:hover {background-color: #004aa6;}
+main section .project_web .web3:hover {background-color: #fabe00;}
+main section .project_web .web4:hover {background-color: #000;}
+main section .project_web .web:hover p {color: #fff;}
+main section .project_web .web:hover h1 {color: #fff;}
+main section .project_web .web {transition:background-color 0.5s, max-width 1s;
+    width:25%;max-width:450px;padding:0 37px;border-left:1px solid #dddddd;}
+main section .project_web .web .num { font-family:"title";font-size: 4.500rem;margin:151px 0;}
+main section .project_web .web1 .num {color: #e26408;}
+main section .project_web .web2 .num {color: #004aa6;}
+main section .project_web .web3 .num {color: #fabe00;}
+main section .project_web .web h1 {margin-bottom:8px;font-size: 1.3rem;text-transform: uppercase;}
+main section .project_web .web .sub {margin-bottom:54px;}
+main section .project_web .web .project {}
+main section .project_web .web .project .img {
+    margin-bottom: 27px; background-size: cover; background-position: center;
+    width:100%; height:285px;}
+main section .project_web .web1 .project .img {
+    background-image: url(../images/web_1.png);
+}
+main section .project_web .web2 .project .img {
+    background-image: url(../images/web_2.png);
+}
+main section .project_web .web3 .project .img {
+    background-image: url(../images/web_3.png);
+}
+main section .project_web .web4 .project .img { 
+    background-image: url(../images/web_4.png);
+}
+main section .project_web .web .project .date {margin-bottom: 106px; color: #888888; font-size:0.875rem;}
+main section .pro {width:1360px;}
+main section .p_clone {}
+main section > * h1 {
+    font-family:"subtitle"; letter-spacing: -0.02rem;
+    text-transform:uppercase; font-size:1.3rem; color:#f64562; font-weight: 700;}
+/* 泥ル쾲吏� �꾨줈�앺듃 : �대줎肄붾뵫 */
+main section .p_clone .coding {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .p_clone .coding .coding_c {
+    height:300px; width:30%;margin:10px;border:1px solid #ddd;
+    position: relative;}
+main section .p_clone .coding .coding_c h2 {
+    opacity: 0; position:absolute;left:50%; top:50%; transform:translate(-50%,-50%);
+    font-size: 1.125rem; color:#fff;z-index: 980;} 
+main section .p_clone .coding .coding_c:hover h2 {opacity:1;}
+main section .p_clone .coding .coding_c a
+{display: block; width:408px; height:300px; background-size:100%; background-position:center top;
+    transition:background-size 1s;
+}
+main section .p_clone .coding .coding_c:hover a::after {
+    content: ''; display: block; opacity: 0; animation: opacity 0.5s both;
+    position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.8); ;}
+main section .p_clone .coding .coding_c:nth-child(1) a {background-image: url(../images/clone1.png);}
+main section .p_clone .coding .coding_c:nth-child(2) a {background-image: url(../images/clone2.png);}
+main section .p_clone .coding .coding_c:nth-child(3) a {background-image: url(../images/clone3.png);}
+main section .p_clone .coding .coding_c:nth-child(4) a {background-image: url(../images/clone4.png);}
+main section .p_clone .coding .coding_c:nth-child(5) a {background-image: url(../images/clone5.png);}
+main section .p_clone .coding .coding_c:nth-child(6) a {background-image: url(../images/clone6.png);}
+main section .pro {margin: 100px auto;}
+main section .detail_bg {    background-color: #f5f5f5;
+    background-image:url(../images/flower.png);
+    background-size: 40%; background-repeat: no-repeat;
+    background-position:sticky;}
+main section .detail_bg,
+main section .instar_bg {
+    width:100%;margin:100px auto; padding:100px 0;}
+main section .detail_bg .p_detail .design a {height:300px; width:30%;margin:10px;border:1px solid #ddd;}
+main section .detail_bg .p_detail .design1 a:hover {
+    background-size:105%; background-color: rgba(0,0,0,0.3);}
+main section .detail_bg .p_detail .design1 a:nth-child(1) {background-image:url(../images/detail_loccitane.jpg  )}
+main section .detail_bg .p_detail .design1 a:nth-child(2) {background-image:url(../images/detail_fruit.jpg)}
+main section .detail_bg .p_detail .design1 a:nth-child(3) {background-image:url(../images/detail_sleep.jpg)}
+main section .detail_bg .p_detail .design1 a:nth-child(4) {}
+/* �먮쾲吏� �꾨줈�앺듃 : �곸꽭�섏씠吏��붿옄�� */
+main section .detail_bg .p_detail .design1 {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .detail_bg .p_detail .design1 a 
+{height:300px; width:30%; margin:10px; background-size:100%; background-position:center top;
+    border:1px solid #ddd;transition:background-size 1s;
+}
+main section .detail_bg .p_detail .design1 a:hover {
+    background-size:105%; background-color: rgba(0,0,0,0.3);}
+main section .detail_bg .p_detail .design1 a:nth-child(1) {background-image:url(../images/detail_loccitane.jpg  )}
+main section .detail_bg .p_detail .design1 a:nth-child(2) {background-image:url(../images/detail_fruit.jpg)}
+main section .detail_bg .p_detail .design1 a:nth-child(3) {}
+main section .detail_bg .p_detail .design1 a:nth-child(4) {}
+main section .detail_bg .p_detail .design1 a:nth-child(5) {}
+main section .detail_bg .p_detail .design1 a:nth-child(6) {}
+/* �몃쾲吏� �꾨줈�앺듃 : 媛�濡쒕같�� �붿옄��  */
+main section .p_bnr .design2 {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .p_bnr .design2 a {
+    height:170px; width:30%; margin:10px;
+    background-repeat: no-repeat; background-size:100%; background-position:center;
+    border:1px solid #ddd; transition:background-size 1s;
+}
+main section .p_bnr .design2 a:hover {
+    background-size: 105%;}
+main section .p_bnr .design2 a:nth-child(1) {background-image:url(../images/horizontal_bnr1.jpg)}
+main section .p_bnr .design2 a:nth-child(2) {background-image:url(../images/horizontal_bnr2.jpg)}
+main section .p_bnr .design2 a:nth-child(3) {background-image:url(../images/horizontal_bnr3.jpg)}
+main section .p_bnr .design2 a:nth-child(4) {background-image:url(../images/horizontal_bnr4.jpg)}
+main section .p_bnr .design2 a:nth-child(5) {background-image:url(../images/horizontal_bnr5.jpg)}
+main section .p_bnr .design2 a:nth-child(6) {background-image:url(../images/horizontal_bnr6.jpg)}
+/* �ㅻ쾲吏� �붿옄�� �꾨줈�앺듃 : �몄뒪��洹몃옩 愿묎퀬 �붿옄��  */
+main section .instar_bg {margin-bottom: 0;}
+main section .instar_bg .p_instar .design3 {display:flex; flex-flow:row wrap; justify-content:space-between;}
+main section .instar_bg .p_instar .design3 a {
+    height:400px; width:30%; margin:10px;
+    background-repeat: no-repeat; background-size:100%; background-position:center;
+    border:1px solid #ddd; transition:background-size 1s;
+}
+main section .instar_bg .p_instar .design3 a:hover {
+    background-size:105%;}
+main section .instar_bg .p_instar .design3 a:nth-child(1) {background-image:url(../images/instargram1.jpg)}
+main section .instar_bg .p_instar .design3 a:nth-child(2) {background-image:url(../images/instargram2.jpg)}
+main section .instar_bg .p_instar .design3 a:nth-child(3) {background-image:url(../images/instargram3.jpg)}
+main section .instar_bg .p_instar .design3 a:nth-child(4) {background-image:url(../images/instargram4-1.jpg)}
+main section .instar_bg .p_instar .design3 a:nth-child(5) {background-image:url(../images/instargram5.jpg)}
+main section .instar_bg .p_instar .design3 a:nth-child(6) {background-image:url(../images/instargram6.jpg)}
+
+footer {height:200px;}
+footer {}
+
+/* 諛섏쓳�뺢뎄�� */
+@media screen and (max-width:850px){
+    main section .project_web .web .project {flex-flow:column nowrap;}
+    main section .project_web .web .project .img {width:100%;}
+    main section .project_web .web .project .content {width:100%;}
+    main section .project_web .web .project .content .link a {}
+}/*1024 end*/
+
+@keyframes moveY {
+    0% {transform: translateY(-30px);}
+    100% {transform: translateY(0px);}
+}
+@keyframes opacity{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+/* �ъ씠�� �앹뾽 */
+body .bg {width:100%; height:100vh; z-index: 980; position: fixed; background-color: rgba(0,0,0,0.5);}
+.popup {
+    position:fixed; z-index: 990;
+    left:50%; top:55%; transform: translate(-50%,-50%);
+    width:75%; height:600px;background-color: white;}
+.popup .content {display: flex; flex-flow: row nowrap; justify-content: space-between;}
+.popup .content .con_left {padding:50px;}
+.popup .content .con_left .intro {    margin-bottom: 35px;}
+.popup .content .con_left .intro h1 {
+    letter-spacing: -0.05rem; font-size:1.700rem; font-weight: 700;
+    margin-bottom: 150px;
+}
+.web_p_1 .content .con_left .intro h1 {color:#e26408;}
+.web_p_2 .content .con_left .intro h1 {color:#004aa6;}
+.web_p_3 .content .con_left .intro h1 {color:#fabe00;}
+.popup .content .con_left .intro p {color:#767676;}
+.popup .content .con_left .intro p span {font-weight: 500;color:#000;}
+.popup .content .con_left .intro p {line-height: 1.8;}
+.popup .content .con_left .link {display: flex; flex-flow: row nowrap; margin:10px 0;}
+.popup .content .con_left div.link a {
+    padding:8px 20px; margin-right: 10px; background-color:transparent;
+    transition:background-color 0.5s, color 0.5s;
+}
+.web_p_1 .content .con_left div.link a {border: 1px solid #e26408; color:#e26408;}
+.web_p_2 .content .con_left div.link a {border: 1px solid #004aa6; color:#004aa6;}
+.web_p_3 .content .con_left div.link a {border: 1px solid #fabe00; ; color:#fabe00;;}
+.web_p_1 .content .con_left div.link a:last-child {background-color:#e26408 ; color:#fff;}
+.web_p_2 .content .con_left div.link a:last-child {background-color:#004aa6; color:#fff;}
+.web_p_3 .content .con_left div.link a:last-child {background-color:#fabe00; color:#fff;}
+.web_p_1 .content .con_left div.link a:hover {background-color: #e26408; color: #fff;}
+.web_p_2 .content .con_left div.link a:hover {background-color: #004aa6; color: #fff;}
+.web_p_3 .content .con_left div.link a:hover {background-color: #fabe00;; color: #fff;}
+.web_p_1 .content .con_left div.link a:last-child:hover {background-color: #e26408; color: #fff;}
+.popup .content .con_left a.site {
+    font-size: 0.875rem; transition:color 0.5s, border-bottom 0.5s;
+    margin-right:10px; padding-bottom:2px;  color:#a5a5a5; float: right; border-bottom:1px solid #a5a5a5;}
+.popup .content .con_left a.site:hover {color:#222;border-bottom:1px solid #222;}
+.popup .content .con_right {
+    width:100%;height:600px;
+    background-position: center;background-size: cover;
+    }
+.web_p_1 .content .con_right {background-image: url(../images/web_1.png);}
+.web_p_2 .content .con_right {background-image: url(../images/web_2.png);}
+.web_p_3 .content .con_right {background-image: url(../images/web_3.png);}
+.popup .close {
+    text-indent: -9999px;
+    height:40px; width:40px;
+    background-image:url(../images/close_black_24dp.svg);
+    background-size: cover; background-repeat: no-repeat;
+    position:absolute;top:50px;right:50px;}
+    .popup .close:hover {color: #fff;}
