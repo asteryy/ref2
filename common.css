@@ -1,0 +1,30 @@
+/* 二� �됱긽 蹂�寃쎌� Ctrl + H �⑥텞�� �꾨Ⅸ �� 0078AA �됱긽�� �먰븯�� �ㅻⅨ �됱긽�쇰줈 紐⑤몢 諛붽씀湲� */
+header,footer {
+    max-width:1360px; min-width:375px;
+    margin:0 auto; padding:0 16px;
+}
+.h_bg{
+    overflow: hidden;
+    background-color: #fff; position:fixed; width: 100%;z-index: 990; top:0;
+    border-bottom: 1px solid #d5d5d5;}
+header {
+    display:flex; justify-content: space-between; align-items: center;opacity: 0;
+    animation:down 0.5s forwards, opacity 1s forwards; 
+}
+header h1 {width:100px;}
+header h1 a {}
+header h1 a img {width:100%;}
+header nav {}
+header nav a {margin-left:20px; font-weight:800; text-transform:capitalize;}
+header nav a:hover {color:#f64562;}
+footer {text-align:center; padding:50px 0; line-height:1.7; color:#f64562; font-size:0.95rem;}
+hr {opacity:0.2;}
+
+@keyframes down {
+    0% {height:0}
+    100% {height:77px}
+}
+@keyframes opacity{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
